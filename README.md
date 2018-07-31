@@ -1,5 +1,11 @@
 # Dockerized AWS CLI
 
+Build awscli:
+
+```
+docker build -t awscli .
+```
+
 Create an alias on your `.bashrc` or `.zshrc`:
 
 ```bash
