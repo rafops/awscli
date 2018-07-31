@@ -1,0 +1,2 @@
+# awscli
+Dockerized AWS CLI
