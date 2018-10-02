@@ -6,8 +6,8 @@ Build awscli:
 docker build -t awscli .
 ```
 
-Create an alias on your `.bashrc` or `.zshrc`:
+Create a script:
 
 ```bash
-alias aws="docker run --rm -v ${PWD}:/root/workdir -v ${HOME}/.aws:/root/.aws awscli"
+echo "docker run --rm -v \$(pwd):/root/workdir -v \${HOME}/.aws:/root/.aws awscli \"\$@\"" > /usr/local/bin/aws
 ```
